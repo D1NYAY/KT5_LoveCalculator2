@@ -6,14 +6,16 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.example.kt5_lovecalculator.App
-import com.example.kt5_lovecalculator.board.LoveModel
+import com.example.kt5_lovecalculator.R
 import com.example.kt5_lovecalculator.databinding.FragmentLoveBinding
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
 class LoveFragment : Fragment() {
+
 
     private lateinit var binding: FragmentLoveBinding
 
@@ -23,9 +25,13 @@ class LoveFragment : Fragment() {
     ): View? {
         binding = FragmentLoveBinding.inflate(inflater)
         return binding.root
-        initClickers()
+
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        initClickers()
+    }
     private fun initClickers(){
         with(binding){
             btnCalculate.setOnClickListener {
@@ -33,6 +39,10 @@ class LoveFragment : Fragment() {
                     override fun onResponse(call: Call<LoveModel>, response: Response<LoveModel>) {
                         if(response.isSuccessful){
                             Log.e("ololo", "onResponse: ${response.body()?.percentage}", )
+                            val result = response.body()
+                            val bundle = Bundle()
+                            bundle.putSerializable("Love", result)
+                            findNavController().navigate(R .id.secondFragment, bundle)
                         }
                     }
 

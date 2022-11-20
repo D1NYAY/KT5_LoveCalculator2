@@ -1,7 +1,7 @@
 package com.example.kt5_lovecalculator
 
 import android.app.Application
-import com.example.hw52.love.LoveAPI
+import com.example.kt5_lovecalculator.love.LoveAPI
 
 class App:Application() {
 

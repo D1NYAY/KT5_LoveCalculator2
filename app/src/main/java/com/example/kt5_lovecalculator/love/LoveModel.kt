@@ -1,4 +1,4 @@
-package com.example.kt5_lovecalculator.board
+package com.example.kt5_lovecalculator.love
 
 import com.google.gson.annotations.SerializedName
 
@@ -9,4 +9,4 @@ data class LoveModel(
     var secondName:String,
     var percentage:String,
     var result:String
-)
+):java.io.Serializable

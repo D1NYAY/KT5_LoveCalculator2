@@ -1,6 +1,6 @@
 package com.example.kt5_lovecalculator
 
-import com.example.hw52.love.LoveAPI
+import com.example.kt5_lovecalculator.love.LoveAPI
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 

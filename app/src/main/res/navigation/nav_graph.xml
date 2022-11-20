@@ -7,12 +7,18 @@
 
     <fragment
         android:id="@+id/boardingFragment"
-        android:name="com.example.hw52.boarding.BoardingFragment"
+        android:name="com.example.kt5_lovecalculator.board.onBoardingFragment"
         android:label="fragment_boarding"
         tools:layout="@layout/fragment_boarding" />
     <fragment
         android:id="@+id/loveFragment"
-        android:name="com.example.hw52.love.LoveFragment"
+        android:name="com.example.kt5_lovecalculator.love.LoveFragment"
         android:label="fragment_love"
         tools:layout="@layout/fragment_love" />
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="com.example.kt5_lovecalculator.SecondFragment"
+        android:label="fragment_second"
+        tools:layout="@layout/fragment_second" />
+
 </navigation>
