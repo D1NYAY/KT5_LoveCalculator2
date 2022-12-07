@@ -21,4 +21,23 @@
         android:label="fragment_second"
         tools:layout="@layout/fragment_second" />
 
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.example.kt5_lovecalculator.history.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history">
+    <action
+        android:id="@+id/action_historyFragment_to_loveFragment"
+        app:destination="@id/loveFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/boardFragment2"
+        android:name="com.example.kt5_lovecalculator.board.onBoardingFragment"
+        android:label="fragment_board"
+        tools:layout="@layout/fragment_boarding" >
+        <action
+            android:id="@+id/action_boardFragment2_to_loveFragment"
+            app:destination="@id/loveFragment" />
+    </fragment>
+
 </navigation>

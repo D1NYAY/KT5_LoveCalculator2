@@ -1,5 +1,4 @@
 package com.example.kt5_lovecalculator.love
-import com.example.kt5_lovecalculator.board.LoveModel
 import retrofit2.http.GET
 import retrofit2.http.Header
 import retrofit2.http.Query
