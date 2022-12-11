@@ -1,7 +1,7 @@
 package com.example.kt5_lovecalculator.board
 
 data class OnBoard(
-    var title:String?,
+    var title: Int,
     var desc:String?,
-    var img:Int?
+    var lottie: String
 )

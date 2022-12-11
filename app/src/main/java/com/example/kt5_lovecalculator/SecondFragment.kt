@@ -28,8 +28,8 @@ class SecondFragment : Fragment() {
 
     private fun result() {
         val loveModel: LoveModel = arguments?.getSerializable("Love") as LoveModel
-        binding.firstName.text = loveModel.firstName
-        binding.secondName.text = loveModel.secondName
+        binding.firstName.text = loveModel.firstname
+        binding.secondName.text = loveModel.secondname
         binding.result.text = loveModel.result
         binding.percent.text = loveModel.percentage
         binding.tryAgainBtn.setOnClickListener {
